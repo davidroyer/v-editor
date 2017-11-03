@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import VEditor from '../src'
+import VEditor from '../src/VEditor.vue'
 
 export default {
   components: {

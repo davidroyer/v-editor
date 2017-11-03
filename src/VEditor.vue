@@ -1,12 +1,12 @@
 <template>
-  <textarea ref="editor" id="editor" :value="value" name="content"></textarea>
+  <textarea ref="editor" id="editor" v-bind:value="value" name="content"></textarea>
 </template>
 
 <script>
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 export default {
-  name: 'editor',
+  name: 'v-editor',
   props: ['value'],
   data: function () {
     return {

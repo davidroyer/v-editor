@@ -1,12 +1,12 @@
 {
   "name": "v-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vue wrapper for new CK Editor5",
   "repository": {
     "url": "davidroyer/v-editor",
     "type": "git"
   },
-  "main": "dist/v-editor.common.js",
+  "main": "dist/VEditor.js",
   "files": [
     "dist"
   ],
@@ -15,7 +15,9 @@
     "test": "test-vue-app",
     "build": "bili",
     "example": "poi",
-    "build:example": "poi build"
+    "build:example": "poi build",
+    "build:umd": "poi build --format cjs --module-name VEditor",
+    "build:cjs": "poi build src/VEditor.vue --format cjs --filename.js VEditor.js --no-sourceNap --no-html --no-extractCSS"
   },
   "author": {
     "name": "David Royer",
