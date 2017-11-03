@@ -14,7 +14,7 @@ CDN: [UNPKG](https://unpkg.com/v-editor/) | [jsDelivr](https://cdn.jsdelivr.net/
 
 ```vue
 <template>
-  <v-editor></v-editor>
+  <v-editor v-model="content"></v-editor>
 </template>
 
 <script>
@@ -23,6 +23,11 @@ import VEditor from 'v-editor'
 export default {
   components: {
     VEditor
+  },
+  data() {
+    return {
+      content: '<h1>Content for editor</h1>'
+    }
   }
 }
 </script>
