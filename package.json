@@ -1,13 +1,15 @@
 {
   "name": "v-editor",
   "version": "0.0.1",
-  "description": "My polished Vue component.",
+  "description": "Vue wrapper for new CK Editor5",
   "repository": {
     "url": "davidroyer/v-editor",
     "type": "git"
   },
   "main": "dist/v-editor.common.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "npm test && npm run build",
     "test": "test-vue-app",
@@ -26,12 +28,18 @@
     "homepage": "./"
   },
   "bili": {
-    "format": ["cjs", "umd"]
+    "format": [
+      "cjs",
+      "umd"
+    ]
   },
   "devDependencies": {
-    "poi": "^9.3.10",
     "bili": "^0.18.2",
+    "poi": "^9.3.10",
     "test-vue-app": "^1.0.0",
     "vue-test-utils": "^1.0.0-beta.2"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^1.0.0-alpha.1"
   }
 }
